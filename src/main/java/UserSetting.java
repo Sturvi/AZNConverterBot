@@ -32,20 +32,22 @@ public class UserSetting {
         InlineKeyboardButton rub = new InlineKeyboardButton("\uD83C\uDDF7\uD83C\uDDFA RUB");
         rub.setCallbackData("RUB");
         InlineKeyboardButton tl = new InlineKeyboardButton("\uD83C\uDDF9\uD83C\uDDF7 TL");
-        tl.setCallbackData("TL");
+        tl.setCallbackData("TRY");
+        InlineKeyboardButton other = new InlineKeyboardButton("\uD83D\uDCB3 Other currencies (manual entry)");
+        other.setCallbackData("OTHER");
 
         switch (selectedCurrency) {
             case ("USD"):
-                usd.setText("\uD83C\uDDFA\uD83C\uDDF8 USD ✅");
+                usd.setText("\uD83C\uDDFA\uD83C\uDDF8 USD  ✅");
                 break;
             case ("EUR"):
-                eur.setText("\uD83C\uDDEA\uD83C\uDDFA EUR ✅");
+                eur.setText("\uD83C\uDDEA\uD83C\uDDFA EUR  ✅");
                 break;
             case ("RUB"):
-                rub.setText("\uD83C\uDDF7\uD83C\uDDFA RUB ✅");
+                rub.setText("\uD83C\uDDF7\uD83C\uDDFA RUB  ✅");
                 break;
-            case ("TL"):
-                tl.setText("\uD83C\uDDF9\uD83C\uDDF7 TL ✅");
+            case ("TRY"):
+                tl.setText("\uD83C\uDDF9\uD83C\uDDF7 TL  ✅");
                 break;
         }
 
