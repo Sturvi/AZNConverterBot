@@ -24,6 +24,7 @@ public class UserSetting {
 
         keyboard.add(new ArrayList<>());
         keyboard.add(new ArrayList<>());
+        keyboard.add(new ArrayList<>());
 
         InlineKeyboardButton usd = new InlineKeyboardButton("\uD83C\uDDFA\uD83C\uDDF8 USD");
         usd.setCallbackData("USD");
@@ -32,9 +33,15 @@ public class UserSetting {
         InlineKeyboardButton rub = new InlineKeyboardButton("\uD83C\uDDF7\uD83C\uDDFA RUB");
         rub.setCallbackData("RUB");
         InlineKeyboardButton tl = new InlineKeyboardButton("\uD83C\uDDF9\uD83C\uDDF7 TL");
+<<<<<<< Updated upstream
         tl.setCallbackData("TRY");
         InlineKeyboardButton other = new InlineKeyboardButton("\uD83D\uDCB3 Other currencies (manual entry)");
         other.setCallbackData("OTHER");
+=======
+        tl.setCallbackData("TL");
+        InlineKeyboardButton other = new InlineKeyboardButton("Other Currency (manual input)");
+        tl.setCallbackData("OTHER");
+>>>>>>> Stashed changes
 
         switch (selectedCurrency) {
             case ("USD"):
@@ -54,6 +61,7 @@ public class UserSetting {
         keyboard.get(0).add(usd);
         keyboard.get(0).add(eur);
         keyboard.get(1).add(rub);
+        keyboard.get(1).add(tl);
         keyboard.get(1).add(tl);
 
         return keyboard;
